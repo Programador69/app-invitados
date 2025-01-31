@@ -6,12 +6,12 @@ const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function Home() {
   return (
-    <div className='panelInicio'>
-      <header className={inter.className}>
+    <div id='panelInicio' className={inter.className}>
+      <header>
         <h1>App de invitados</h1>
       </header>
 
-      <main className={inter.className}>
+      <main>
         <section className='sectionFormulario'>
           <Formulario/>
           <ul>
