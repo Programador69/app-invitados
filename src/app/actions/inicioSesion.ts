@@ -1,6 +1,6 @@
 import { EsquemaInicioSesion, EstadoFormulario } from "./validacionInicio";
 import bcrypt from "bcryptjs";
-import { redirect } from 'next/navigation'
+// import { redirect } from 'next/navigation'
 
 export async function inicioSesion(state: EstadoFormulario, formData: FormData) {
     const obteniendoCampos = EsquemaInicioSesion.safeParse({
@@ -23,13 +23,13 @@ export async function inicioSesion(state: EstadoFormulario, formData: FormData) 
         console.log(hashedPassword);
 
         // const usuario = await db.findUser(usuario); realizar la consulta a la base de datos
-        bcrypt.compare(contra, usuario.contra, (err, res) => {
-            if (res) {
-                redirect("/eventos");
-            } else {
-                alert("Usuario / contraseña no validos");
-            }
-        });
+        // bcrypt.compare(contra, usuario.contra, (err, res) => {
+        //     if (res) {
+        //         redirect("/eventos");
+        //     } else {
+        //         alert("Usuario / contraseña no validos");
+        //     }
+        // });
 
         
     } catch (error) {
