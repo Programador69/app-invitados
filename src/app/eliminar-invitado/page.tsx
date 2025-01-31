@@ -2,7 +2,9 @@ import "@/app/eliminar-invitado/estilo.css";
 import { FaArrowLeft, FaRegAddressCard } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { TbAlertSquare } from "react-icons/tb";
-import { inter } from "../page";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function EliminarInvitado() {
     return (

@@ -1,7 +1,9 @@
 import "@/app/buscar-codigo/estilo.css";
 import { FaArrowLeft } from "react-icons/fa";
-import { inter } from "../page";
 import { TbAlertSquare } from "react-icons/tb";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function BuscarCodigo() {
     return (

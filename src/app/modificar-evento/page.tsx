@@ -5,9 +5,11 @@ import { FaArrowLeft, FaRegAddressCard } from "react-icons/fa";
 import { MdEventNote, MdOutlineEmail, MdEvent,MdOutlineMessage } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { CiFileOn } from "react-icons/ci";
-import { inter } from "../page";
 import { useState } from "react";
 import { TbAlertSquare } from "react-icons/tb";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function ModificarEvento() {
     const [archivo, setArchivo] = useState("");

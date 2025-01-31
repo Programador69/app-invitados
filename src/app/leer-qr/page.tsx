@@ -4,13 +4,19 @@ import "@/app/leer-qr/estilo.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { Scanner } from "@yudiel/react-qr-scanner";
 import { useState } from "react";
-import { inter } from "../page";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function Qr() {
     const [valor, setValor] = useState("Leyendo Qr...")
 
-    const verificarQr = (data: object[]) => {
-        const [{rawValue}] = data; 
+    interface QrData {
+        rawValue: string;
+    }
+
+    const verificarQr = (data: QrData[]) => {
+        const [{rawValue}] = data;
         setValor(rawValue)
     }
 

@@ -1,6 +1,8 @@
 import "@/app/consultar-fechas/estilo.css";
 import { FaArrowLeft } from "react-icons/fa";
-import { inter } from "../page";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function ConsultarFechas() {
   const datos = iterarFechas();

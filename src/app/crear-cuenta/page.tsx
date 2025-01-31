@@ -1,4 +1,6 @@
-import { inter } from "../page";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function Crear() {
     return (

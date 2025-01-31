@@ -1,8 +1,8 @@
 import Pie from './componentes/pie';
-import { Inter } from 'next/font/google';
 import Formulario from './componentes/formularioInicio';
+import { Inter } from 'next/font/google';
 
-export const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function Home() {
   return (

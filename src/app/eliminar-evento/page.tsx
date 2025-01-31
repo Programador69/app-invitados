@@ -1,7 +1,9 @@
 import "@/app/eliminar-evento/estilo.css";
 import { FaArrowLeft, FaRegAddressCard } from "react-icons/fa";
-import { inter } from "../page";
 import { TbAlertSquare } from "react-icons/tb";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({subsets: ["latin"], weight: "700", style: ["italic"]})
 
 export default function EliminarEvento() {
     return (
